@@ -6,7 +6,6 @@ import AddTodo from './AddTodo';
 
 class FirstApp extends Component {
 	state = {
-		actions: ['1', 2],
 		todos: [
 			{ id: 1, content: 'clean my room' },
 			{ id: 2, content: 'wash the windows' }

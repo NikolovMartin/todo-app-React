@@ -14,6 +14,7 @@ h1 {
 	font-weight: normal;
 	font-size: 3rem;
 	color: #323375;
+	text-align: center;
 }
 .App-header {
 	background-color: #b7b9bd;
@@ -76,4 +77,51 @@ form {
 .construction {
 	color: red;
 	font-size: 2rem;
+}
+
+.SecondApp {
+	width: 30%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 2px solid #323375;
+	border-radius: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 20px;
+}
+
+.SecondApp input {
+	font-size: 1rem;
+	background: white;
+}
+
+.info {
+	width: 100%;
+	padding-top: 10px;
+	margin: 0px auto 0 auto;
+	border: 5px solid #323375;
+	border-top: none;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	text-align: center;
+}
+
+.info img {
+	width: 70px;
+}
+
+.error {
+	width: 100%;
+	text-align: center;
+}
+
+.error h3 {
+	color: red;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
 }

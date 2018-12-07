@@ -125,3 +125,9 @@ form {
 	width: 100%;
 	text-align: center;
 }
+
+.inCenter {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}

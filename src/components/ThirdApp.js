@@ -20,12 +20,9 @@ class ThirdApp extends React.Component {
 					info: data,
 					history: [data, ...this.state.history]
 				});
-				// this.setState(state => {
-				// 	const history = state.history.push(state.info);
-				// });
 			});
 
-		console.log(this.state.history);
+		console.log(this.state.history.length);
 	};
 
 	handleChange = e => {
@@ -36,7 +33,7 @@ class ThirdApp extends React.Component {
 
 	handleClick = () => {
 		const params = this.state.city;
-		//console.log(params);
+
 		if (!params) {
 			this.setState({
 				error: 'Please enter city'
@@ -48,7 +45,6 @@ class ThirdApp extends React.Component {
 			});
 		}
 
-		//console.log(this.state.error);
 		this.getData(this.base + params + this.appId);
 	};
 
@@ -58,7 +54,7 @@ class ThirdApp extends React.Component {
 		return this.state.history.map((data, i) => this.renderData(data, i));
 	};
 
-	renderData = (info, i = -1) => {
+	renderData = (info, i = 0) => {
 		if (!Object.keys(info).length) {
 			return null;
 		}
@@ -66,8 +62,6 @@ class ThirdApp extends React.Component {
 		if (info.cod === '404') {
 			return <h2>{info.message}</h2>;
 		}
-
-		//console.log(this.state.info.main.temp);
 
 		return (
 			<React.Fragment key={i}>

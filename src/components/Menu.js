@@ -14,6 +14,9 @@ const Menu = () => {
 				<li>
 					<NavLink to="/thirdApp">Third App</NavLink>
 				</li>
+				<li>
+					<NavLink to="/fourthApp">Fourth App</NavLink>
+				</li>
 			</ul>
 		</nav>
 	);

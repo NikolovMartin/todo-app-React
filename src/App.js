@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import FirstApp from './components/FirstApp';
 import SecondApp from './components/SecondApp';
 import ThirdApp from './components/ThirdApp';
+import FourthApp from './components/FourthApp';
 
 class App extends Component {
 	render() {
@@ -15,6 +16,7 @@ class App extends Component {
 					<Route path="/firstApp" component={FirstApp} />
 					<Route path="/secondApp" component={SecondApp} />
 					<Route path="/thirdApp" component={ThirdApp} />
+					<Route path="/fourthApp" component={FourthApp} />
 				</div>
 			</BrowserRouter>
 		);
